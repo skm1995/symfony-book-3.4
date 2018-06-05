@@ -64,6 +64,7 @@ class Product
     public function __construct()
     {
         $this->createdAt=new \DateTime();
+        $this->expDate=new \DateTime('+2 week');
     }
 
 

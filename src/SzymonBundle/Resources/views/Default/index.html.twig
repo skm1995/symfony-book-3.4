@@ -6,12 +6,17 @@
 
     {{ number }}
     <br>
-    Zalogowany użytkownik to: {{ app.user }}
+    {% if app.user %}Zalogowany użytkownik to: {{ app.user }}{% else %}Nikt nie jest zalogowany: <a href="{{ path('fos_user_security_login') }}">Zaloguj się</a>{% endif %}
 
     {% if app.user %}
         <a href="{{ path('fos_user_security_logout') }}">Wyloguj się</a>
-    {% else %}
-        <a href="{{ path('fos_user_security_login') }}">Zaloguj się</a>
     {% endif %}
+
+    <h2>Wystaw produkt na 2 tygodnie</h2>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+
 
 {% endblock %}

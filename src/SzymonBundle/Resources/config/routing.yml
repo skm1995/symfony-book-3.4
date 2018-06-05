@@ -2,6 +2,10 @@ szymon_homepage:
     path:     /
     defaults: { _controller: SzymonBundle:Default:index }
 
+succes:
+    path:     /succes
+    defaults: { _controller: SzymonBundle:Default:succes }
+
 number_homepage:
     path:     /szymon/{max}
     defaults: { _controller: SzymonBundle:Number:show }

@@ -5,6 +5,7 @@ namespace SzymonBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class ProductType extends AbstractType
 {
@@ -13,13 +14,12 @@ class ProductType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->
-        add('name')->
-        add('price')->
-        add('createdAt')->
-        add('expDate')->
-        add('user')->
-        add('category');
+        $builder
+            ->add('name')
+            ->add('price')
+            ->add('user')
+            ->add('category')
+            ->add('save', SubmitType::class, array('label' => 'Dodaj produkt'));
     }/**
      * {@inheritdoc}
      */

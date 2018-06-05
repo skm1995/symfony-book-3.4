@@ -5,6 +5,13 @@
 
 
     {{ number }}
+    <br>
+    Zalogowany użytkownik to: {{ app.user }}
 
+    {% if app.user %}
+        <a href="{{ path('fos_user_security_logout') }}">Wyloguj się</a>
+    {% else %}
+        <a href="{{ path('fos_user_security_login') }}">Zaloguj się</a>
+    {% endif %}
 
 {% endblock %}

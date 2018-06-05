@@ -1,6 +1,5 @@
 szymon:
     resource: "@SzymonBundle/Resources/config/routing.yml"
-    prefix:   /
 
 app:
     resource: '@AppBundle/Controller/'

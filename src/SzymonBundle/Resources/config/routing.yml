@@ -1,3 +1,7 @@
 szymon_homepage:
     path:     /
     defaults: { _controller: SzymonBundle:Default:index }
+
+number_homepage:
+    path:     /szymon/
+    defaults: { _controller: SzymonBundle:Number:show }

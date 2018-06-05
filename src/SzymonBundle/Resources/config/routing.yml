@@ -1,0 +1,3 @@
+szymon_homepage:
+    path:     /
+    defaults: { _controller: SzymonBundle:Default:index }

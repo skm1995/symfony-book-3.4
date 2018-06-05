@@ -7,12 +7,12 @@ use Symfony\Component\HttpFoundation\Response;
 
 class NumberController extends Controller
 {
-    public function showAction()
+    public function showAction($max)
     {
-        $number=10;
+        $number=rand(0,$max);
 
         return new Response(
-            '<html><body>Numerek: '.$number.'</body></html>'
+            '<html><body>Podaj max liczbę do wylosowania w linku<br>Wylosowany numerek: '.$number.'</body></html>'
         );
     }
 }

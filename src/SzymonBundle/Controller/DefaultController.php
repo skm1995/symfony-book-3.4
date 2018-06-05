@@ -9,6 +9,10 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('@Szymon/Default/index.html.twig');
+        $test="To jest zmienna testowa";
+
+        return $this->render('@Szymon/Default/index.html.twig', array(
+            'number' => $test,
+        ));
     }
 }

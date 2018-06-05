@@ -3,5 +3,5 @@ szymon_homepage:
     defaults: { _controller: SzymonBundle:Default:index }
 
 number_homepage:
-    path:     /szymon/
+    path:     /szymon/{max}
     defaults: { _controller: SzymonBundle:Number:show }

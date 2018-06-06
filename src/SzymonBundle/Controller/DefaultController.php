@@ -17,6 +17,7 @@ class DefaultController extends Controller
         $test="To jest zmienna testowa";
 
         $product = new Product();
+        $product->setUser($this->getUser());
         $form = $this -> createForm(ProductType::class, $product);
 
 

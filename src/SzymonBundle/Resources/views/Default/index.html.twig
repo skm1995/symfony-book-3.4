@@ -6,16 +6,19 @@
 
     {{ number }}
     <br>
-    {% if app.user %}Zalogowany użytkownik to: {{ app.user }}{% else %}Nikt nie jest zalogowany: <a href="{{ path('fos_user_security_login') }}">Zaloguj się</a>{% endif %}
+    {% if app.user %}Zalogowany użytkownik to: {{ app.user }}
+    {% else %}Nikt nie jest zalogowany! <a href="{{ path('fos_user_security_login') }}">Zaloguj się</a> lub <a href="{{ path('fos_user_registration_register') }}">Zarejestruj się</a>, aby móc dodać produkt.
+    {% endif %}
 
     {% if app.user %}
         <a href="{{ path('fos_user_security_logout') }}">Wyloguj się</a>
+        <h2>Wystaw produkt na 2 tygodnie</h2>
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
     {% endif %}
 
-    <h2>Wystaw produkt na 2 tygodnie</h2>
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    {{ form_end(form) }}
+
 
 
 

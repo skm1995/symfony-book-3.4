@@ -17,7 +17,6 @@ class ProductType extends AbstractType
         $builder
             ->add('name')
             ->add('price')
-            ->add('user')
             ->add('category')
             ->add('save', SubmitType::class, array('label' => 'Dodaj produkt'));
     }/**

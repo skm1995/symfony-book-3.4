@@ -7,5 +7,15 @@ succes:
     defaults: { _controller: SzymonBundle:Default:succes }
 
 number_homepage:
-    path:     /szymon/{max}
-    defaults: { _controller: SzymonBundle:Number:show }
+    path:     /szymon/{_locale}/{max}.{_format}
+    defaults: { _controller: SzymonBundle:Number:show, max: 10, _format: html }
+    requirements:
+            max: '\d+'
+            _locale:  en|fr|pl
+            _format:  html|rss
+
+
+sql:
+    path:     /sql
+    defaults: { _controller: SzymonBundle:Sql:show}
+

@@ -1,11 +1,18 @@
 {% extends 'base.html.twig' %}
 
+
+
 {% block body %}
+    <div class="container">
+
+
+
     <h1>Hello World!</h1>
-
-
     {{ number }}
     <br>
+        <a href="{{ path('sql') }}">SQL</a>
+        <br>
+        <a href="{{ path('number_homepage') }}">number</a>
     {% if app.user %}Zalogowany użytkownik to: {{ app.user }}
     {% else %}Nikt nie jest zalogowany! <a href="{{ path('fos_user_security_login') }}">Zaloguj się</a> lub <a href="{{ path('fos_user_registration_register') }}">Zarejestruj się</a>, aby móc dodać produkt.
     {% endif %}
@@ -13,13 +20,10 @@
     {% if app.user %}
         <a href="{{ path('fos_user_security_logout') }}">Wyloguj się</a>
         <h2>Wystaw produkt na 2 tygodnie</h2>
-        {{ form_start(form) }}
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
         {{ form_widget(form) }}
         {{ form_end(form) }}
     {% endif %}
-
-
-
-
+    </div>
 
 {% endblock %}

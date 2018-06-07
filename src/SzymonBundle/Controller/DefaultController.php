@@ -5,9 +5,7 @@ namespace SzymonBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use SzymonBundle\Entity\Product;
-use Symfony\Component\HttpFoundation\Response;
 use SzymonBundle\Form\ProductType;
-
 
 class DefaultController extends Controller
 {
@@ -23,6 +21,7 @@ class DefaultController extends Controller
 
         $form->handleRequest($request);
 
+
         if ($form->isSubmitted() && $form->isValid()) {
             $product = $form->getData();
 
@@ -37,7 +36,7 @@ class DefaultController extends Controller
 
         return $this->render('@Szymon/Default/index.html.twig', array(
             'number' => $test,
-            'form' => is_null ($form) ? $form : $form->createView()
+            'form' => is_null ($form) ? $form : $form->createView(),
         ));
     }
     public function succesAction(){

@@ -3,6 +3,7 @@
 namespace SzymonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Product
@@ -25,6 +26,9 @@ class Product
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     *
+     * @Assert\NotBlank()
+     * @Assert\Length(min=3)
      */
     private $name;
 
@@ -32,6 +36,8 @@ class Product
      * @var int
      *
      * @ORM\Column(name="price", type="integer")
+     *
+     * @Assert\NotBlank()
      */
     private $price;
 
@@ -57,7 +63,7 @@ class Product
 
     /**
      * @ORM\ManyToOne(targetEntity="SzymonBundle\Entity\Category", inversedBy="products")
-     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id", nullable=false)
      */
     private $category;
 
@@ -221,4 +227,5 @@ class Product
     {
         return $this->category;
     }
+
 }

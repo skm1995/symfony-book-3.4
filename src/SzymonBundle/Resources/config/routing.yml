@@ -14,7 +14,6 @@ number_homepage:
             _locale:  en|fr|pl
             _format:  html|rss
 
-
 sql:
     path:     /sql
     defaults: { _controller: SzymonBundle:Sql:show}

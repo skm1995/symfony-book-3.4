@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6358373a-0553-4d2a-b69f-dc4b4de19bf8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SzymonBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SzymonBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SzymonBundle/Controller/NumberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SzymonBundle/Controller/NumberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SzymonBundle/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SzymonBundle/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SzymonBundle/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SzymonBundle/Entity/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SzymonBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SzymonBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/sql.szymon.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/sql.szymon.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,15 +94,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product" pinned="false" current-in-tab="false">
-        <entry file="das://662c65e6-e4d0-478d-8678-16791398483a/schema/symfony/table/product">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fos_user" pinned="false" current-in-tab="false">
         <entry file="das://662c65e6-e4d0-478d-8678-16791398483a/schema/symfony/table/fos_user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -146,16 +131,28 @@
         <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/config/routing.yml">
+      <file leaf-file-name="sql.szymon.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/sql.szymon.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -231,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/SzymonBundle/Entity/Author.php" />
         <option value="$PROJECT_DIR$/src/SzymonBundle/Controller/ValidationController.php" />
         <option value="$PROJECT_DIR$/src/SzymonBundle/Entity/Category.php" />
-        <option value="$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/sql.szymon.html.twig" />
         <option value="$PROJECT_DIR$/src/SzymonBundle/Controller/SqlController.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/662c65e6-e4d0-478d-8678-16791398483a/console.sql" />
         <option value="$PROJECT_DIR$/src/SzymonBundle/Entity/Product.php" />
@@ -239,6 +235,7 @@
         <option value="$PROJECT_DIR$/src/SzymonBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/SzymonBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/sql.szymon.html.twig" />
       </list>
     </option>
   </component>
@@ -487,12 +484,12 @@
       <workItem from="1528290588538" duration="782000" />
       <workItem from="1528291395140" duration="1916000" />
       <workItem from="1528294005827" duration="9735000" />
-      <workItem from="1528371968316" duration="16911000" />
+      <workItem from="1528371968316" duration="18095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55032000" />
+    <option name="totallyTimeSpent" value="56216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-7" width="1936" height="1056" extended-state="6" />
@@ -799,16 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/sql.szymon.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -846,17 +833,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SzymonBundle/Resources/views/Default/sql.szymon.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

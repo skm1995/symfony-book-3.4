@@ -4,11 +4,13 @@
 
         {% if app.user %}
         <p>Lista produktów wystawiona przez: {{ app.user }} </p>
+            {% if products %}
             {% for product in products %}
-
                 <p>Nazwa: {{ product.name }}, Cena: {{ product.price }}</p>
-
             {% endfor %}
+            {% else %}
+                <p>Nic nie wystawiono!</p>
+            {% endif %}
         {% else %}
             <p><a href="{{ path('fos_user_security_login') }}">Zaloguj się</a>, aby zobaczyć wystawione przez siebie produkty</p>
         {% endif %}

@@ -78,3 +78,9 @@ fos_user:
     from_email:
         address: "test@test.test"
         sender_name: "Test"
+
+easy_admin:
+    entities:
+        - SzymonBundle\Entity\Product
+        - SzymonBundle\Entity\Category
+        - AppBundle\Entity\User

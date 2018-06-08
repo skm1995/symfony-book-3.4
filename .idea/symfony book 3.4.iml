@@ -5,7 +5,11 @@
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/src/AppBundle" isTestSource="false" packagePrefix="AppBundle\" />
       <sourceFolder url="file://$MODULE_DIR$/src/SzymonBundle" isTestSource="false" packagePrefix="SzymonBundle\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bin/.phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easycorp/easyadmin-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pagerfanta/pagerfanta" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/extensions" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -5,6 +5,7 @@ namespace SzymonBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use SzymonBundle\Entity\Product;
+use SzymonBundle\SzymonBundle;
 
 
 class SqlController extends Controller
@@ -27,6 +28,12 @@ class SqlController extends Controller
         return $this->render('@Szymon/Default/sql.szymon.html.twig', array(
             'products' => $products,
         ));
+
+    }
+
+    public function inAction(){
+
+        return $this->render('@Szymon/Default/in.szymon.html.twig');
 
     }
 }

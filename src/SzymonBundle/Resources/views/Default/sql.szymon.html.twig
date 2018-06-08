@@ -6,7 +6,7 @@
         <p>Lista produktów wystawiona przez: {{ app.user }} </p>
             {% if products %}
             {% for product in products %}
-                <p>Nazwa: {{ product.name }}, Cena: {{ product.price }}</p>
+                <a href="{{ path('sql_in', {'in': product.id}) }}"><p>Nazwa: {{ product.name }}, Cena: {{ product.price }}, Data wystawienia: {{ product.createdAt | date("m/d/Y") }}</p></a>
             {% endfor %}
             {% else %}
                 <p>Nic nie wystawiono!</p>

@@ -3,14 +3,12 @@
 namespace SzymonBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 use SzymonBundle\Entity\Product;
-use SzymonBundle\SzymonBundle;
 
 
 class SqlController extends Controller
 {
-    public function showAction(Request $request){
+    public function showAction(){
 
         $user=$this->getUser();
 
@@ -31,9 +29,11 @@ class SqlController extends Controller
 
     }
 
-    public function inAction(){
+    public function inAction(Product $product){
 
-        return $this->render('@Szymon/Default/in.szymon.html.twig');
+        return $this->render('@Szymon/Default/in.szymon.html.twig', array(
+            'productin' => $product
+        ));
 
     }
 }

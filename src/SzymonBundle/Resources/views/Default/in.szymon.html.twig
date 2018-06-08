@@ -2,4 +2,11 @@
 
 {% block body %}
 
+    <p>Nazwa: {{ productin.name }}</p>
+    <p>Cena: {{ productin.price }}</p>
+    <p>Data wystawienia: {{ productin.createdAt | date("m/d/Y") }}</p>
+    <p>Data zakończenia: {{ productin.expDate | date("m/d/Y") }}</p>
+
+    <a href="{{ path('sql') }}">Wróć</a>
+
 {% endblock %}

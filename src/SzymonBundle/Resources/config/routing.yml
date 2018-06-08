@@ -19,7 +19,7 @@ sql:
     defaults: { _controller: SzymonBundle:Sql:show}
 
 sql_in:
-    path:     /sql/{in}
+    path:     /sql/{id}
     defaults: { _controller: SzymonBundle:Sql:in}
     requirements:
                 in: '\d+'
